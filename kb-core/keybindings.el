@@ -1,8 +1,11 @@
 (require 'helm)
 
+;; Reassign M-x
+(bind-key* "S-SPC" 'helm-M-x)
+(bind-key* "M-x" 'helm-M-x)
+
 ;; Bring up helm
-(bind-key "S-SPC" 'helm-for-files)
-(evil-global-set-key 'normal (kbd "; t") 'helm-for-files)
+(evil-global-set-key 'normal (kbd ";t") 'helm-for-files)
 
 ;; Movement
 (evil-global-set-key 'normal (kbd "n") 'evil-next-line)
@@ -26,4 +29,9 @@
 
 ;; AG
 (evil-global-set-key 'normal (kbd ";vv") 'helm-projectile-ag)
+
+;; Commenting
+;; Usually Spc-c-l
+(evil-global-set-key 'normal (kbd "; c SPC") 'evilnc-comment-or-uncomment-lines)
+
 
