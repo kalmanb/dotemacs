@@ -35,3 +35,13 @@
 (evil-global-set-key 'normal (kbd "; c SPC") 'evilnc-comment-or-uncomment-lines)
 
 
+;; tmux bindings
+(bind-key* "C-a n" 'evil-window-down)
+(bind-key* "C-a e" 'evil-window-up)
+(bind-key* "C-a h" 'evil-window-left)
+(bind-key* "C-a i" 'evil-window-right)
+
+(bind-key* "C-a |" 'split-window-horizontally-and-switch)
+(bind-key* "C-a \\" 'split-window-horizontally-and-switch)
+(bind-key* "C-a -" 'split-window-vertically-and-switch)
+
