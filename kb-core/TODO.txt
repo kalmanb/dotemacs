@@ -1,0 +1,9 @@
+
+fullscreen toggle
+scala formatting
+scala sort imports
+scala goto error
+scala goto next error
+using git
+ensime
+

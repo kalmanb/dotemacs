@@ -36,6 +36,7 @@
 
 
 ;; tmux bindings
+(bind-key* "C-a" nil)
 (bind-key* "C-a n" 'evil-window-down)
 (bind-key* "C-a e" 'evil-window-up)
 (bind-key* "C-a h" 'evil-window-left)
