@@ -5,13 +5,15 @@
 (bind-key* "M-x" 'helm-M-x)
 
 ;; Bring up helm
-(evil-global-set-key 'normal (kbd ";t") 'helm-for-files)
+(evil-global-set-key 'normal (kbd ";g") 'helm-for-files)
+(evil-global-set-key 'normal (kbd ";t") 'helm-projectile-find-file)
 
 ;; Movement
-(evil-global-set-key 'normal (kbd "n") 'evil-next-line)
-(evil-global-set-key 'normal (kbd "e") 'evil-previous-line)
-(evil-global-set-key 'normal (kbd "i") 'evil-forward-char)
-(evil-global-set-key 'normal (kbd "h") 'evil-backward-char)
+(dolist (mode '(normal visual))
+  (evil-global-set-key mode (kbd "n") 'evil-next-line)
+  (evil-global-set-key mode (kbd "e") 'evil-previous-line)
+  (evil-global-set-key mode (kbd "i") 'evil-forward-char)
+  (evil-global-set-key mode (kbd "h") 'evil-backward-char))
 
 ;; Insert Mode
 (evil-global-set-key 'normal (kbd "l") 'evil-insert-state)

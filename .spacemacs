@@ -19,7 +19,13 @@
                                      scala
                                      javascript
                                      haskell
+                                     clojure
+                                     html
+                                     markdown
+                                     php
+                                     dockerfile
                                      kb-core
+                                     kb-groovy
                                      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
