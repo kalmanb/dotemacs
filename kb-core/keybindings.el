@@ -35,6 +35,7 @@
 ;; Commenting
 ;; Usually Spc-c-l
 (evil-global-set-key 'normal (kbd "; c SPC") 'evilnc-comment-or-uncomment-lines)
+(evil-global-set-key 'visual (kbd "; c SPC") 'evilnc-comment-or-uncomment-lines)
 
 
 ;; tmux bindings

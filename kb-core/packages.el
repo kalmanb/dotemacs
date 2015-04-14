@@ -13,6 +13,7 @@
 (defvar kb-core-packages
   '(
     ;; package kb-cores go here
+    company
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -30,6 +31,9 @@ which require an initialization must be listed explicitly in the list.")
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
 
-(defun kb-core/init-my-package ()
+(defun kb-core/init-company ()
   "Initialize my package"
+  (use-package company
+    :config
+    (global-company-mode))
   )

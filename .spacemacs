@@ -13,7 +13,8 @@
 
    ;; Kal - mod
    dotspacemacs-configuration-layers '(
-                                     company-mode
+                                     auto-completion
+                                     syntax-checking
                                      git
                                      smex
                                      scala
