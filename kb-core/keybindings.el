@@ -1,7 +1,9 @@
 (require 'helm)
 
-;; Reassign M-x
+;; Reassign M-x to C-Spc and S-Spc
 (bind-key* "S-SPC" 'helm-M-x)
+(global-unset-key (kbd "C-@"))
+(bind-key* "C-SPC" 'helm-M-x)
 (bind-key* "M-x" 'helm-M-x)
 
 ;; Bring up helm
