@@ -1,4 +1,4 @@
-;;; packages.el --- kb-scala Layer packages File for Spacemacs
+;;; packages.el --- kb-typescript Layer packages File for Spacemacs
 ;;
 ;; Copyright (c) 2012-2014 Sylvain Benner
 ;; Copyright (c) 2014-2015 Sylvain Benner & Contributors
@@ -10,19 +10,20 @@
 ;;
 ;;; License: GPLv3
 
-(defvar kb-scala-packages
+(defvar kb-typescript-packages
   '(
-    f
+    ;; package kb-typescripts go here
+    tss
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
 
-(defvar kb-scala-excluded-packages '()
+(defvar kb-typescript-excluded-packages '()
   "List of packages to exclude.")
 
-;; For each package, define a function kb-scala/init-<package-kb-scala>
+;; For each package, define a function kb-typescript/init-<package-kb-typescript>
 ;;
-;; (defun kb-scala/init-my-package ()
+;; (defun kb-typescript/init-my-package ()
 ;;   "Initialize my package"
 ;;   )
 ;;
@@ -30,6 +31,7 @@ which require an initialization must be listed explicitly in the list.")
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
 
-(defun kb-scala/init-f ()
-  (use-package f)
+(defun kb-typescript/init-tss ()
+  (require 'tss)
+  (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
   )

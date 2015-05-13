@@ -1,4 +1,4 @@
-;;; extensions.el --- kb-scala Layer extensions File for Spacemacs
+;;; extensions.el --- kb-typescript Layer extensions File for Spacemacs
 ;;
 ;; Copyright (c) 2012-2014 Sylvain Benner
 ;; Copyright (c) 2014-2015 Sylvain Benner & Contributors
@@ -10,27 +10,24 @@
 ;;
 ;;; License: GPLv3
 
-(defvar kb-scala-pre-extensions
+(defvar kb-typescript-pre-extensions
   '(
-    ;; pre extension kb-scalas go here
+    ;; pre extension kb-typescripts go here
     )
   "List of all extensions to load before the packages.")
 
-(defvar kb-scala-post-extensions
+(defvar kb-typescript-post-extensions
   '(
-     scala-errors
+    ;; post extension kb-typescripts go here
     )
   "List of all extensions to load after the packages.")
 
-;; For each extension, define a function kb-scala/init-<extension-kb-scala>
+;; For each extension, define a function kb-typescript/init-<extension-kb-typescript>
 ;;
-;; (defun kb-scala/init-my-extension ()
+;; (defun kb-typescript/init-my-extension ()
 ;;   "Initialize my extension"
 ;;   )
 ;;
 ;; Often the body of an initialize function uses `use-package'
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
-
-(defun kb-scala/init-scala-errors ()
-    (use-package scala-errors))

@@ -14,6 +14,9 @@
   '(
     ;; package kb-cores go here
     company
+    dash
+    s
+    ff
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -31,9 +34,28 @@ which require an initialization must be listed explicitly in the list.")
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
 
+(eval-when-compile
+  (require 'use-package nil t)
+  (require 's nil t)
+  (require 'dash nil t)
+  (require 'ff nil t)
+  )
+
 (defun kb-core/init-company ()
   "Initialize my package"
   (use-package company
     :config
-    (global-company-mode))
-  )
+    (setq company-minimum-prefix-length 3)
+    (global-company-mode)))
+
+(defun cb-core/init-dash ()
+  (use-package dash
+    :config (require 'dash)))
+
+(defun cb-core/init-s ()
+  (use-package s
+    :config (require 's)))
+
+(defun cb-core/init-f ()
+  (use-package ff
+    :config (require 'ff)))
