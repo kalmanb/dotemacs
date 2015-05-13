@@ -40,6 +40,14 @@
 (evil-global-set-key 'visual (kbd "; c SPC") 'evilnc-comment-or-uncomment-lines)
 
 
+;; Moving between windows in emacs
+(evil-leader/set-key 
+  "wn" 'evil-window-down
+  "we" 'evil-window-up
+  "wh" 'evil-window-left
+  "wi" 'evil-window-right)
+
+
 ;; tmux bindings
 (bind-key* "C-a" nil)
 (bind-key* "C-a n" 'evil-window-down)
@@ -50,4 +58,8 @@
 (bind-key* "C-a |" 'split-window-horizontally-and-switch)
 (bind-key* "C-a \\" 'split-window-horizontally-and-switch)
 (bind-key* "C-a -" 'split-window-vertically-and-switch)
+
+;; Font size
+(define-key global-map (kbd "M-+") 'text-scale-increase)
+(define-key global-map (kbd "M--") 'text-scale-decrease)
 
