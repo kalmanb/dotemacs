@@ -13,6 +13,7 @@
 (defvar kb-scala-packages
   '(
     f
+    request
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -32,4 +33,8 @@ which require an initialization must be listed explicitly in the list.")
 
 (defun kb-scala/init-f ()
   (use-package f)
+  )
+
+(defun kb-scala/init-request ()
+  (use-package request)
   )

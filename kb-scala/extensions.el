@@ -19,6 +19,7 @@
 (defvar kb-scala-post-extensions
   '(
      scala-errors
+     scalariform
     )
   "List of all extensions to load after the packages.")
 
@@ -34,3 +35,6 @@
 
 (defun kb-scala/init-scala-errors ()
     (use-package scala-errors))
+
+(defun kb-scala/init-scalariform ()
+    (use-package scalariform))
