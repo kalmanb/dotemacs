@@ -26,6 +26,7 @@
                                      ;; php
                                      dockerfile
                                      kb-core
+                                     kb-gtags
                                      kb-scala
                                      kb-groovy
                                      kb-jade
