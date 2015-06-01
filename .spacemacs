@@ -23,11 +23,12 @@
                                      clojure
                                      html
                                      markdown
-                                     php
+                                     ;; php
                                      dockerfile
                                      kb-core
                                      kb-scala
                                      kb-groovy
+                                     kb-jade
                                      kb-typescript
                                      )
    ;; A list of packages and/or extensions that will not be install and loaded.

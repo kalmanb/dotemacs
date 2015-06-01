@@ -31,6 +31,8 @@ which require an initialization must be listed explicitly in the list.")
 ;; https://github.com/jwiegley/use-package
 
  (defun kb-jade/init-jade-mode ()
-   (use-package jade-mode
-     :defer t))
-     :mode "\\.jade\\'"))
+   ;(require 'groovy-mode)
+   )
+   ;; (use-package jade-mode
+   ;;   :defer t))
+   ;;   :mode "\\.jade\\'"))
