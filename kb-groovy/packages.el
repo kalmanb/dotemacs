@@ -10,14 +10,14 @@
 ;;
 ;;; License: GPLv3
 
-(defvar kb-groovy-packages
+(defconst kb-groovy-packages
   '(
     groovy-mode
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
 
-(defvar kb-groovy-excluded-packages '()
+(defconst kb-groovy-excluded-packages '()
   "List of packages to exclude.")
 
 ;; For each package, define a function kb-groovy/init-<package-kb-groovy>
