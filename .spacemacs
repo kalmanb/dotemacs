@@ -27,6 +27,7 @@
                                      dockerfile
                                      kb-core
                                      kb-gtags
+                                     kb-utils
                                      kb-scala
                                      kb-groovy
                                      kb-jade
