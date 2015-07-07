@@ -14,6 +14,7 @@
   '(
     f
     request
+    ensime
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -37,4 +38,10 @@ which require an initialization must be listed explicitly in the list.")
 
 (defun kb-scala/init-request ()
   (use-package request)
+  )
+
+(defun kb-scala/init-ensime ()
+  (setq ensime-tooltip-hints nil)
+  (setq ensime-tooltip-type-hints nil)
+  (add-hook 'ensime-mode-hook (lambda () (eldoc-mode -1)))
   )

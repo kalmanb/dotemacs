@@ -21,6 +21,7 @@
                                      javascript
                                      haskell
                                      clojure
+                                     go
                                      html
                                      markdown
                                      ;; php
