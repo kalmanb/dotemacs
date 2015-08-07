@@ -24,6 +24,7 @@
                                      go
                                      html
                                      markdown
+                                     kb-php
                                      php
                                      dockerfile
                                      kb-core
