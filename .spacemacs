@@ -24,10 +24,10 @@
                                      go
                                      html
                                      markdown
-                                     ;; php
+                                     php
                                      dockerfile
                                      kb-core
-                                     kb-gtags
+                                     ;;kb-gtags
                                      kb-utils
                                      kb-scala
                                      kb-groovy

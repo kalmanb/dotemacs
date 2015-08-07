@@ -41,6 +41,10 @@
 (evil-global-set-key 'visual (kbd "; c SPC") 'evilnc-comment-or-uncomment-lines)
 
 
+;; Temp - meta pp
+;; (evil-leader/set-key "pp" 'projectile-switch-project)
+
+
 ;; Moving between windows in emacs
 (evil-leader/set-key 
   "wn" 'evil-window-down
