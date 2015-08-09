@@ -31,8 +31,9 @@
                                              (interactive)
                                              (kill-buffer (current-buffer))))
 
-;; AG
+
 (setq helm-ag-insert-at-point 'symbol)  ;; Needed for search word under cursor
+;; (setq grep-find-ignored-directories '(".git"))  ;; Needed for search word under cursor
 (evil-global-set-key 'normal (kbd ";vv") 'helm-projectile-ag)
 
 ;; Commenting
