@@ -33,7 +33,9 @@
 
 
 (setq helm-ag-insert-at-point 'symbol)  ;; Needed for search word under cursor
-;; (setq grep-find-ignored-directories '(".git"))  ;; Needed for search word under cursor
+;; Needed for search word under cursor to work - need to define these bad boys
+(setq grep-find-ignored-files nil
+            grep-find-ignored-directories nil)
 (evil-global-set-key 'normal (kbd ";vv") 'helm-projectile-ag)
 
 ;; Commenting

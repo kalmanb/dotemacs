@@ -28,6 +28,8 @@
                                      php
                                      dockerfile
                                      kb-core
+                                     kb-react
+                                     kb-javascript
                                      ;;kb-gtags
                                      kb-utils
                                      kb-scala

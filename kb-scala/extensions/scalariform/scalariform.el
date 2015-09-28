@@ -3,7 +3,10 @@
 (require 'request)
 
 ;; location of the scalariform config file
-(setq scalariform-preferences-file "/home/kalmanb/work/dev-tools/eclipse/scala-formatter.properties")
+;; OSX
+(setq scalariform-preferences-file "/Users/kalmanb/work/dev-tools/eclipse/scala-formatter.properties")
+;; Linux
+;; (setq scalariform-preferences-file "/home/kalmanb/work/dev-tools/eclipse/scala-formatter.properties")
 
 
 ;; Call daemon for formatting
