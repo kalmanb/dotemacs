@@ -1,4 +1,4 @@
-(require 'helm)
+;;(require 'helm)
 
 ;; Reassign M-x to C-Spc and S-Spc
 (bind-key* "S-SPC" 'helm-M-x)
@@ -23,8 +23,6 @@
 ;; Search remapping
 (evil-global-set-key 'normal "j" 'evil-search-next)
 
-;; Back buffer
-(evil-leader/set-key "SPC" 'spacemacs/alternate-buffer)
 
 ;; Close current buffer
 (evil-global-set-key 'normal (kbd ";bd") (lambda()

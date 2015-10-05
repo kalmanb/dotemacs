@@ -13,6 +13,7 @@
 (defvar kb-core-packages
   '(
     ;; package kb-cores go here
+    helm
     company
     dash
     s
@@ -41,7 +42,13 @@ which require an initialization must be listed explicitly in the list.")
   (require 'ff nil t)
   )
 
-(defun kb-core/init-company ()
+(defun kb-core/post-init-helm ()
+  ;; Back buffer
+  (use-package helm 
+    :config
+    (evil-leader/set-key "SPC" 'spacemacs/alternate-buffer)))
+
+(defun kb-core/post-init-company ()
   "Initialize my package"
   (use-package company
     :config

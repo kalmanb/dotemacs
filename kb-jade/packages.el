@@ -12,7 +12,7 @@
 
 (defvar kb-jade-packages
   '(
-    jade-mode
+    ;; TODO - if no config remove this
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -30,9 +30,3 @@ which require an initialization must be listed explicitly in the list.")
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
 
- (defun kb-jade/init-jade-mode ()
-   ;(require 'groovy-mode)
-   )
-   ;; (use-package jade-mode
-   ;;   :defer t))
-   ;;   :mode "\\.jade\\'"))
