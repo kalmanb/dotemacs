@@ -10,6 +10,7 @@
 
 
 ;; Call daemon for formatting
+;;;###autoload
 (defun scalariform-daemon-format-file ()
   (interactive)
   (when (and (boundp 'scalariform-preferences-file)
@@ -20,6 +21,7 @@
                (preferencesFile . ,scalariform-preferences-file)))))
 
 ;; Start server
+;;;###autoload
 (defun start-scalariform-daemon ()
   (interactive)
   (let ((buf-name "*scalariform-daemon*")

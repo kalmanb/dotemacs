@@ -1,10 +1,10 @@
-;;(require 'helm)
-
 ;; Reassign M-x to C-Spc and S-Spc
-(bind-key* "S-SPC" 'helm-M-x)
+;; (bind-key* "S-SPC" 'helm-M-x)
 (global-unset-key (kbd "C-@"))
 (bind-key* "C-SPC" 'helm-M-x)
-(bind-key* "M-x" 'helm-M-x)
+;; (bind-key* "M-x" 'helm-M-x)
+
+;; Note M-m is equal to SPC
 
 ;; Bring up helm
 (evil-global-set-key 'normal (kbd ";g") 'helm-for-files)

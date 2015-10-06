@@ -10,12 +10,15 @@
 ;;
 ;;; License: GPLv3
 
-(defvar kb-scala-packages
+(defconst kb-scala-packages
   '(
     f
     request
     ensime
-    )
+
+    ;; Load local packages
+    (scala-errors :location local)
+    (scalariform :location local))
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
 
@@ -45,3 +48,13 @@ which require an initialization must be listed explicitly in the list.")
   (setq ensime-tooltip-type-hints nil)
   (add-hook 'ensime-mode-hook (lambda () (eldoc-mode -1)))
   )
+
+;; Local Packages
+
+(defun kb-scala/init-scala-errors ()
+  (use-package scala-errors
+    :mode "\\.scala"))
+
+(defun kb-scala/init-scalariform ()
+  (use-package scalariform
+    :mode "\\.scala"))

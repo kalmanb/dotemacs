@@ -34,15 +34,15 @@ values."
                                      kb-php
                                      php
                                      dockerfile
+                                     kb-utils
                                      kb-core
                                      kb-react
                                      kb-javascript
                                      ;;kb-gtags
-                                     kb-utils
                                      kb-scala
                                      kb-groovy
-                                     kb-jade
-                                     kb-typescript
+                                     ;; kb-jade
+                                     ;; kb-typescript
                                      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these

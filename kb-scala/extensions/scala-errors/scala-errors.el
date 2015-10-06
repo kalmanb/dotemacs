@@ -200,7 +200,6 @@ Used when refreshing the error list.")
 
 
 ;;; Evil key bindings
-
 (eval-after-load 'evil-leader
   '(progn
      (evil-leader/set-key-for-mode 'scala-mode "mfl" 'scala-errors-show-errors)
