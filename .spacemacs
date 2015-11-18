@@ -31,6 +31,7 @@ values."
                                      go
                                      html
                                      markdown
+                                     gtags
                                      kb-php
                                      php
                                      dockerfile
@@ -38,7 +39,6 @@ values."
                                      kb-core
                                      kb-react
                                      kb-javascript
-                                     ;;kb-gtags
                                      kb-scala
                                      kb-groovy
                                      ;; kb-jade
