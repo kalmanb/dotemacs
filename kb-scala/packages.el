@@ -51,10 +51,11 @@ which require an initialization must be listed explicitly in the list.")
 
 ;; Local Packages
 
-;; (defun kb-scala/init-scala-errors ()
-;;   (use-package scala-errors
-;;     :mode "\\.scala"))
+(defun kb-scala/init-scala-errors ()
+  (with-eval-after-load 'scala-mode2
+    (require 'scala-errors)))
 
-;; (defun kb-scala/init-scalariform ()
-;;   (use-package scalariform
-;;     :mode "\\.scala"))
+(defun kb-scala/init-scalariform ()
+  (with-eval-after-load 'scala-mode2
+    (use-package scalariform)))
+

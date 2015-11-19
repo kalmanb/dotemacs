@@ -36,6 +36,7 @@ values."
                                      php
                                      dockerfile
                                      kb-utils
+                                     kb-yasnippet
                                      kb-core
                                      kb-react
                                      kb-javascript
@@ -200,6 +201,9 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
+
+  ;; Added Kal
+  (defvar yas-snippet-dirs (list "~/.emacs.d/private/snippets"))
   )
 
 (defun dotspacemacs/user-config ()
