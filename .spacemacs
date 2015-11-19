@@ -37,6 +37,8 @@ values."
                                      dockerfile
                                      kb-utils
                                      kb-yasnippet
+                                     kb-company
+                                     kb-auto-completion
                                      kb-core
                                      kb-react
                                      kb-javascript
