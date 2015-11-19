@@ -31,6 +31,8 @@
 ;; https://github.com/jwiegley/use-package
 
 (defun kb-yasnippet/post-init-yasnippet ()
+  (setq yas-snippet-dirs (list (f-join user-layers-directory "snippets")))
+
   ;; Use TAB completion
   (evil-global-set-key 'insert (kbd "TAB") 'yas-expand-from-trigger-key)
 
