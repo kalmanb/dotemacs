@@ -4,7 +4,7 @@
 
 ;; Added Kal
 (eval-and-compile
-    (defconst user-layers-directory "~/.dotemacs/"))
+    (defconst user-layers-directory "~/.spacemacs-config/"))
 
 (defun dotspacemacs/layers ()
   "Configuration Layers declaration.
