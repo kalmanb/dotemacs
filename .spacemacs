@@ -35,6 +35,7 @@ values."
                                      go
                                      html
                                      markdown
+                                     yaml
                                      gtags
                                      kb-php
                                      php
