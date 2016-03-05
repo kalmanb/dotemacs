@@ -36,10 +36,12 @@ values."
                                      html
                                      markdown
                                      yaml
+                                     puppet
                                      gtags
                                      kb-php
                                      php
                                      dockerfile
+                                     ruby
                                      kb-utils
                                      kb-yasnippet
                                      kb-company
@@ -210,7 +212,7 @@ It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
 
   ;; Added Kal
-  (defvar yas-snippet-dirs (list "~/.emacs.d/private/snippets"))
+  (defvar yas-snippet-dirs (list "~/.spacemacs-config/snippets"))
   )
 
 (defun dotspacemacs/user-config ()
