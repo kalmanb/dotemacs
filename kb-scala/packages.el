@@ -13,11 +13,13 @@
 (defconst kb-scala-packages
   '(
     f
-    request
+    ;request
     ensime
 
+    scala-errors
+
     ;; Load local packages
-    (scala-errors :location local)
+    ;; (scala-errors :location local)
     (scalariform :location local))
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -39,9 +41,9 @@ which require an initialization must be listed explicitly in the list.")
   (use-package f)
   )
 
-(defun kb-scala/init-request ()
-  (use-package request)
-  )
+;(defun kb-scala/init-request ()
+  ;(use-package request)
+  ;)
 
 (defun kb-scala/post-init-ensime ()
   (setq ensime-tooltip-hints nil)
@@ -53,7 +55,11 @@ which require an initialization must be listed explicitly in the list.")
 
 (defun kb-scala/init-scala-errors ()
   (with-eval-after-load 'scala-mode2
-    (require 'scala-errors)))
+    (require 'scala-errors.el)))
+
+(defun kb-scala/post-init-scala-errors ()
+  (add-hook 'scala-mode-hook #'scala-errors-init)
+  (add-hook 'scala-mode-hook #'scala-errors-spacemacs-init))
 
 (defun kb-scala/init-scalariform ()
   (with-eval-after-load 'scala-mode2
