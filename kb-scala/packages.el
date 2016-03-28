@@ -54,10 +54,6 @@ which require an initialization must be listed explicitly in the list.")
 ;; Local Packages
 
 (defun kb-scala/init-scala-errors ()
-  (with-eval-after-load 'scala-mode2
-    (require 'scala-errors.el)))
-
-(defun kb-scala/post-init-scala-errors ()
   (add-hook 'scala-mode-hook #'scala-errors-init)
   (add-hook 'scala-mode-hook #'scala-errors-spacemacs-init))
 
