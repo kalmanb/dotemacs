@@ -14,3 +14,6 @@
 (setq global-auto-revert-non-file-buffers t)
 (setq auto-revert-verbose nil)
 (setq auto-revert-interval 0.1)
+
+;; Temporarily stop creating lock files - throws webpack out
+(setq create-lockfiles nil)
