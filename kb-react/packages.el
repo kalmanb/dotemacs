@@ -16,6 +16,7 @@
     '(
       ;; package names go here
       jsx-mode
+      web-mode
       ))
 
 ;; List of packages to exclude.
@@ -34,5 +35,9 @@
 (defun kb-react/init-jsx-mode ()
   "Initialize my package"
   (add-to-list 'auto-mode-alist '("\\.jsx\\'" . jsx-mode))
-  (setq jsx-indent-level 2)
-  )
+  (setq jsx-indent-level 2))
+
+(defun kb-react/post-init-web-mode ()
+  "Initialize my package"
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . react-mode)))
+

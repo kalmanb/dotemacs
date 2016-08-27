@@ -48,6 +48,8 @@ values."
                                      kb-auto-completion
                                      kb-core
                                      kb-react
+                                     react
+                                     rust
                                      kb-javascript
                                      kb-scala
                                      kb-groovy
