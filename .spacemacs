@@ -29,19 +29,20 @@ values."
                                      smex
                                      scala
                                      javascript
-                                     haskell
-                                     clojure
+                                     ;; haskell
+                                     ;; clojure
                                      emacs-lisp
                                      go
+                                     kb-go
                                      html
                                      markdown
                                      yaml
-                                     puppet
+                                     ;; puppet
                                      gtags
-                                     kb-php
-                                     php
+                                     ;; kb-php
+                                     ;; php
                                      dockerfile
-                                     ruby
+                                     ;; ruby
                                      kb-utils
                                      kb-yasnippet
                                      kb-company
@@ -52,7 +53,7 @@ values."
                                      rust
                                      kb-javascript
                                      kb-scala
-                                     kb-groovy
+                                     ;; kb-groovy
                                      ;; kb-jade
                                      kb-typescript
                                      )
@@ -219,6 +220,8 @@ user code."
   ;; Added Kal
   (defvar yas-snippet-dirs (list "~/.spacemacs-config/snippets"))
   )
+  (setq tramp-ssh-controlmaster-options
+        "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
