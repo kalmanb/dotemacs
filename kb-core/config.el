@@ -1,5 +1,8 @@
 ;; Kal's core config
 
+;; Turn off syntax highlighting
+(global-font-lock-mode 0)
+
 (setq evil-escape-key-sequence "ii")
 (setq evil-escape-delay 0.5)
 

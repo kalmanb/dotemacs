@@ -14,7 +14,6 @@
 ;; which require an initialization must be listed explicitly in the list.
 (setq kb-go-packages
     '(
-      ;; package kb-gos go here
       ))
 
 ;; List of packages to exclude.
@@ -29,5 +28,6 @@
 ;; Often the body of an initialize function uses `use-package'
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
+
 
 (setq gofmt-command "goimports")

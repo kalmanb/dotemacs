@@ -15,6 +15,7 @@
 (setq kb-javascript-packages
     '(
       ;; package names go here
+      import-js
       ))
 
 ;; List of packages to exclude.
@@ -30,6 +31,12 @@
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
 
+
+(defun kb-javascript/init-import-js ()
+  (setq import-js-project-root "/Users/kalmanb/work/apidoc/apidoc-ui")
+  )
+
+(setq import-js-project-root "/Users/kalmanb/work/apidoc/apidoc-ui")
 (setq js-indent-level 2)
 (setq js2-basic-offset 2)
 (setq css-indent-offset 2)

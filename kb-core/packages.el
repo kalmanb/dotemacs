@@ -13,11 +13,11 @@
 (defvar kb-core-packages
   '(
     ;; package kb-cores go here
-    helm
+    ;; helm
     company
     dash
     s
-    ff
+    f
     )
   "List of all packages to install and/or initialize. Built-in packages
 which require an initialization must be listed explicitly in the list.")
@@ -38,15 +38,15 @@ which require an initialization must be listed explicitly in the list.")
 (eval-when-compile
   (require 'use-package nil t)
   (require 's nil t)
-  (require 'dash nil t)
-  (require 'ff nil t)
+  ;; (require 'dash nil t)
+  (require 'f nil t)
   )
 
-(defun kb-core/post-init-helm ()
-  ;; Back buffer
-  (use-package helm 
-    :config
-    (evil-leader/set-key "SPC" 'spacemacs/alternate-buffer)))
+;; (defun kb-core/post-init-helm ()
+;;   ;; Back buffer
+;;   (use-package helm 
+;;     :config
+;;     (evil-leader/set-key "SPC" 'spacemacs/alternate-buffer)))
 
 (defun kb-core/post-init-company ()
   "Initialize my package"
@@ -55,14 +55,18 @@ which require an initialization must be listed explicitly in the list.")
     (setq company-minimum-prefix-length 3)
     (global-company-mode)))
 
-(defun cb-core/init-dash ()
+(defun kb-core/init-dash ()
   (use-package dash
-    :config (require 'dash)))
+    :config (require 'dash))
+  (add-hook 'go-mode-hook
+    (lambda () (setq 'dash-at-point-docset "g")))
+  (add-hook 'react-mode-hook
+    (lambda () (setq 'dash-at-point-docset "js"))))
 
-(defun cb-core/init-s ()
+(defun kb-core/init-s ()
   (use-package s
     :config (require 's)))
 
-(defun cb-core/init-f ()
-  (use-package ff
-    :config (require 'ff)))
+(defun kb-core/init-f ()
+  (use-package f
+    :config (require 'f)))

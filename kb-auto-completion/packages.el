@@ -14,7 +14,7 @@
 ;; which require an initialization must be listed explicitly in the list.
 (setq kb-auto-completion-packages
     '(
-      ggtags
+      ;; ggtags
       ))
 
 ;; List of packages to exclude.
@@ -30,5 +30,5 @@
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
 
-(defun kb-auto-completion/init-ggtags ()
-  (add-hook 'prog-mode-hook 'ggtags-mode))
+;; (defun kb-auto-completion/init-ggtags ()
+;;   (add-hook 'prog-mode-hook 'ggtags-mode))

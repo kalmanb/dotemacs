@@ -12,7 +12,7 @@
 
 (defconst kb-scala-packages
   '(
-    f
+    ;; f
     ;request
     ensime
 
@@ -37,9 +37,9 @@ which require an initialization must be listed explicitly in the list.")
 ;; For more info on `use-package', see readme:
 ;; https://github.com/jwiegley/use-package
 
-(defun kb-scala/init-f ()
-  (use-package f)
-  )
+;; (defun kb-scala/init-f ()
+;;   (use-package f)
+;;   )
 
 ;(defun kb-scala/init-request ()
   ;(use-package request)
