@@ -1,0 +1,3 @@
+[submodule "kb-javascript/local/flow-minor-mode"]
+	path = kb-javascript/local/flow-minor-mode
+	url = git@github.com:an-sh/flow-minor-mode.git

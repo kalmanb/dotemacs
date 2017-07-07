@@ -43,7 +43,7 @@ values."
                                      git
                                      dash
                                      ;; smex
-                                     scala
+                                     ;; scala
                                      javascript
                                      ;; haskell
                                      ;; clojure
@@ -54,23 +54,23 @@ values."
                                      markdown
                                      yaml
                                      ;; puppet
-                                     gtags
+                                     ;; gtags
                                      ;; kb-php
                                      ;; php
                                      ;; ruby
+                                     react
+                                     ;; rust
                                      kb-utils
                                      kb-yasnippet
                                      kb-company
                                      kb-auto-completion
                                      kb-core
                                      kb-react
-                                     react
-                                     rust
                                      kb-javascript
-                                     kb-scala
+                                     ;; kb-scala
                                      ;; kb-groovy
                                      ;; kb-jade
-                                     kb-typescript
+                                     ;; kb-typescript
                                      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these

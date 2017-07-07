@@ -16,6 +16,7 @@
     '(
       ;; package names go here
       import-js
+      (flow-minor-mode :location local)
       ))
 
 ;; List of packages to exclude.
@@ -34,6 +35,13 @@
 
 (defun kb-javascript/init-import-js ()
   (setq import-js-project-root "/Users/kalmanb/work/apidoc/apidoc-ui")
+  )
+
+(defun kb-javascript/init-flow-minor-mode ()
+    (use-package flow-minor-mode)
+  ;; (with-eval-after-load 'react-mode
+  ;;   (use-package flow-minor-mode))
+  ;;   (add-hook 'react-mode-hook 'flow-minor-enable-automatically)
   )
 
 (setq import-js-project-root "/Users/kalmanb/work/apidoc/apidoc-ui")
